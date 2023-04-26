@@ -37,6 +37,7 @@ export const Img = styled.img`
 `;
 
 export const P = styled.p`
+  text-transform: uppercase;
   margin: 5px;
   color: white;
 `;
