@@ -40,10 +40,19 @@ export const Img = styled.img`
   z-index: 998;
 `;
 
-export const P = styled.p`
+export const P1 = styled.p`
+  font-size: 20px;
   text-transform: uppercase;
   margin: 1px;
-  margin-top: 26px;
+  margin-top: 42px;
+  color: white;
+`;
+export const P2 = styled.p`
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 1px;
+  // margin-top: 16px;
+  margin-bottom: 16px;
   color: white;
 `;
 
@@ -69,7 +78,7 @@ export const Card = styled.div`
 export const Button = styled.button`
   // box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
-
+  background-color: #ebd8ff;
   width: 196px;
   margin: 0 auto;
   border: none;
