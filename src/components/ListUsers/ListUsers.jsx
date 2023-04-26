@@ -17,7 +17,8 @@ import {
   List,
   Logo,
   MSG,
-  P,
+  P1,
+  P2,
 } from './ListUsers.styled';
 import { followUser } from 'service/serviceAPI';
 const converNumber = number => new Intl.NumberFormat('ja-JP').format(number);
@@ -38,8 +39,8 @@ export const ListUsers = ({ users, handleFollowing }) => {
                 ) : (
                   <AiOutlineFileImage size={80} />
                 )}
-                <P>{converNumber(tweets)} tweets</P>
-                <P>{converNumber(followers)} followers</P>
+                <P1>{converNumber(tweets)} tweets</P1>
+                <P2>{converNumber(followers)} followers</P2>
                 <Button
                   onClick={() => {
                     handleFollowing(id);
