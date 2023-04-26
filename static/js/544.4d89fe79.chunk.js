@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktasck=self.webpackChunktasck||[]).push([[544],{544:function(e,t,n){n.r(t);var c=n(184);t.default=function(){return(0,c.jsx)(c.Fragment,{children:(0,c.jsx)("div",{children:(0,c.jsx)("h2",{style:{textAlign:"center",paddingTop:20,paddingBottom:20},children:"Welcome to tweets App"})})})}}}]);
+//# sourceMappingURL=544.4d89fe79.chunk.js.map
