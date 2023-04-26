@@ -1,8 +1,5 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-// import ellipse from '../../images/Ellipse.png';
-// import rectangl from '../../images/Rectangle.png';
-// import logo from '../../images/Logo.png';
 export const Li = styled.li`
   list-style: none;
   padding: 3px;
@@ -30,21 +27,29 @@ export const List = styled.ul`
 `;
 
 export const Img = styled.img`
-  width: 70px;
+  // zoom: 1.2;
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -57%);
   border-radius: 50px;
   // margin-top: 126px;
-  margin-left: 150px;
+  // margin-left: 150px;
+  z-index: 998;
 `;
 
 export const P = styled.p`
   text-transform: uppercase;
   margin: 1px;
+  margin-top: 26px;
   color: white;
 `;
 
 export const Card = styled.div`
   border-radius: 14px;
-
+  position: relative;
   background: #471ca9;
   display: flex;
   flex-direction: column;
@@ -90,8 +95,34 @@ export const Logo = styled.img`
 
 export const MSG = styled.img`
   position: relative;
-  // margin-top: -20px;
+  // margin-top: -30px;
   margin-left: 20px;
   width: 308px;
   height: 168px;
+`;
+
+export const Line = styled.img`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // position: relative;
+  // margin-top: -30px;
+  // margin-left: 20px;
+  // width: 308px;
+  // height: 168px;
+`;
+
+export const Ellipse = styled.img`
+  // zoom: 1.2;
+  // width: 62px;
+  // height: 62px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  // margin-top: 126px;
+  // margin-left: 150px;
+  z-index: 999;
 `;
