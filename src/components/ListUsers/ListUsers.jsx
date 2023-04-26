@@ -17,7 +17,6 @@ export const ListUsers = ({ users, handleFollowing }) => {
                 ) : (
                   <AiOutlineFileImage size={80} />
                 )}
-                {user}
                 <P>{converNumber(tweets)} tweets</P>
                 <P>{converNumber(followers)} followers</P>
 

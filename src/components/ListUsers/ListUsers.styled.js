@@ -38,9 +38,12 @@ export const Img = styled.img`
 
 export const P = styled.p`
   margin: 5px;
+  color: white;
 `;
 
 export const Card = styled.div`
+  border-radius: 14px;
+
   background: #471ca9;
   display: flex;
   flex-direction: column;
@@ -60,6 +63,7 @@ export const Card = styled.div`
 export const Button = styled.button`
   // box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
+
   width: 196px;
   margin: 0 auto;
   border: none;
