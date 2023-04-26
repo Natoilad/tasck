@@ -1,7 +1,9 @@
 // import PropTypes from 'prop-types';
+import logo from '../../images/Logo.png';
+import picture from '../../images/picture.png';
 import { AiOutlineFileImage } from 'react-icons/ai';
 import { Outlet } from 'react-router-dom';
-import { Button, Card, Img, Li, List, P } from './ListUsers.styled';
+import { Button, Card, Img, Li, List, Logo, MSG, P } from './ListUsers.styled';
 import { followUser } from 'service/serviceAPI';
 const converNumber = number => new Intl.NumberFormat('ja-JP').format(number);
 export const ListUsers = ({ users, handleFollowing }) => {
@@ -12,6 +14,8 @@ export const ListUsers = ({ users, handleFollowing }) => {
           return (
             <Li key={id}>
               <Card>
+                <Logo src={logo}></Logo>
+                <MSG src={picture}></MSG>
                 {avatar ? (
                   <Img src={avatar} alt={user} size={80} />
                 ) : (

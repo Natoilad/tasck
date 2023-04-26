@@ -30,15 +30,15 @@ export const List = styled.ul`
 `;
 
 export const Img = styled.img`
-  width: 80px;
+  width: 70px;
   border-radius: 50px;
-  margin-top: 178px;
+  // margin-top: 126px;
   margin-left: 150px;
 `;
 
 export const P = styled.p`
   text-transform: uppercase;
-  margin: 5px;
+  margin: 1px;
   color: white;
 `;
 
@@ -79,4 +79,19 @@ export const Button = styled.button`
   &:hover {
     background-color: #5cd3a8;
   }
+`;
+
+export const Logo = styled.img`
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 76px;
+  height: 22px;
+`;
+
+export const MSG = styled.img`
+  position: relative;
+  // margin-top: -20px;
+  margin-left: 20px;
+  width: 308px;
+  height: 168px;
 `;
