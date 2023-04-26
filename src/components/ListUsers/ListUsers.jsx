@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types';
 import { AiOutlineFileImage } from 'react-icons/ai';
 import { Outlet } from 'react-router-dom';
-import { Card, Img, Li, List } from './ListUsers.styled';
+import { Button, Card, Img, Li, List, P } from './ListUsers.styled';
 import { followUser } from 'service/serviceAPI';
 const converNumber = number => new Intl.NumberFormat('ja-JP').format(number);
 export const ListUsers = ({ users, handleFollowing }) => {
@@ -18,10 +18,10 @@ export const ListUsers = ({ users, handleFollowing }) => {
                   <AiOutlineFileImage size={80} />
                 )}
                 {user}
-                <p>{converNumber(tweets)} tweets</p>
-                <p>{converNumber(followers)} followers</p>
+                <P>{converNumber(tweets)} tweets</P>
+                <P>{converNumber(followers)} followers</P>
 
-                <button
+                <Button
                   onClick={() => {
                     handleFollowing(id);
                     followUser(id, {
@@ -30,7 +30,7 @@ export const ListUsers = ({ users, handleFollowing }) => {
                   }}
                 >
                   {isFollow ? 'following' : 'follow'}
-                </button>
+                </Button>
               </Card>
             </Li>
           );

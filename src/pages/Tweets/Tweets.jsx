@@ -1,4 +1,5 @@
 import { ListUsers } from 'components/ListUsers/ListUsers';
+import { Button } from 'components/ListUsers/ListUsers.styled';
 import Loader from 'components/Loader/Loader';
 import { useEffect, useState } from 'react';
 import { fetchAllUsers, fetchUsers } from 'service/serviceAPI';
@@ -61,7 +62,7 @@ const Users = () => {
         localStorage.setItem(TOTALUSER, JSON.stringify(lengthArray));
       });
     }
-  }, [page, users]);
+  }, [page]);
 
   const handleFollowing = id => {
     const upduser = users.map(user => {
@@ -86,7 +87,7 @@ const Users = () => {
       )}
       {loading && <Loader />}
       {actualPage < totaluser / 3 && (
-        <button
+        <Button
           onClick={() => {
             if (actualPage) {
               setPage(actualPage + 1);
@@ -96,7 +97,7 @@ const Users = () => {
           }}
         >
           Load More
-        </button>
+        </Button>
       )}
     </div>
   );
