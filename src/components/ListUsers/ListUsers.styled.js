@@ -22,7 +22,7 @@ export const List = styled.ul`
   justify-content: center;
   // textAlign: center:
   flex-wrap: wrap;
-  // padding: 0;
+  padding: 0;
   margin: 0 'auto';
 `;
 

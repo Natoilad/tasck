@@ -62,7 +62,7 @@ const Users = () => {
         localStorage.setItem(TOTALUSER, JSON.stringify(lengthArray));
       });
     }
-  });
+  }, [page, users]);
 
   const handleFollowing = id => {
     const upduser = users.map(user => {
