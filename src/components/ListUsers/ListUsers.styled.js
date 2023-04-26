@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-import ellipse from '../../images/Ellipse.png';
-import rectangl from '../../images/Rectangle.png';
-import logo from '../../images/Logo.png';
+// import ellipse from '../../images/Ellipse.png';
+// import rectangl from '../../images/Rectangle.png';
+// import logo from '../../images/Logo.png';
 export const Li = styled.li`
   list-style: none;
   padding: 3px;
