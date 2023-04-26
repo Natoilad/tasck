@@ -1,8 +1,8 @@
 {
-  "name": "twitter-task",
+  "name": "tasck",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://natoilad.github.io/twitter-task/",
+  "homepage": "https://natoilad.github.io/tasck/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
